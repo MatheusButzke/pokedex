@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react';
+import React from 'react';
 
 import {
     Container,
@@ -13,80 +13,9 @@ import {
 import {View} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Lista({nome, types, contador, statusName, status, evolucoes}){
+export default function Lista({nome, types, contador, statusName, status, evolucoes, bgColor}){
 
-    const [bgColor, setBgColor] = useState('#FFF' );
     const navigation = useNavigation();
-
-    useEffect(() => {
-
-        function corBG(){
-            if(types[0] == 'water'){
-                setBgColor('#ADD8E6');
-                return
-            }   
-            if(types[0] == 'grass'){
-                setBgColor('#00FF7F');
-                return
-            }
-            if(types[0] == 'fire'){
-                setBgColor('#FF7F50');
-                return
-            }
-            if(types[0] == 'bug'){
-                setBgColor('#9ACD32');
-                return
-            }
-            if(types[0] == 'rock'){
-                setBgColor('#BEBEBE');
-                return
-            }
-            if(types[0] == 'electric'){
-                setBgColor('#FFD700');
-                return
-            }
-            if(types[0] == 'normal'){
-                setBgColor('#EEE8AA');
-                return
-            }
-            if(types[0] == 'poison'){
-                setBgColor('#FF00FF');
-                return
-            }
-            if(types[0] == 'ground'){
-                setBgColor('#DEB887');
-                return
-            }
-            if(types[0] == 'fighting'){
-                setBgColor('#8FBC8F');
-                return
-            }
-            if(types[0] == 'ghost'){
-                setBgColor('#BA55D3');
-                return
-            }
-            if(types[0] == 'fairy'){
-                setBgColor('#FFE4E1');
-                return
-            }
-            if(types[0] == 'psychic'){
-                setBgColor('#A020F0');
-                return
-            }
-            if(types[0] == 'ice'){
-                setBgColor('#AFEEEE');
-                return
-            }
-            if(types[0] == 'dragon'){
-                setBgColor('#E6E6FA');
-                return
-            }
-
-        }
-
-        corBG();
-
-    },[])
       
     return(
         <Container onPress={()=>(navigation.navigate('Infos', { bgColor, nome, contador, types, statusName, status, evolucoes }))}style={{backgroundColor: bgColor}}>
