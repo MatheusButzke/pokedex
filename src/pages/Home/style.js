@@ -45,3 +45,10 @@ export const InputBusca = styled.TextInput`
     padding-top: 10px;
 
 `;
+
+export const ImgLoading = styled.Image`
+
+    width: 350px;
+    height: 62px;
+
+`;
