@@ -17,6 +17,7 @@ Desenvolver um aplicativo que faça uma listagem de pokémons, obtendo informaç
 - [x]  **Informações do Pokémon:** Mostrar ao usuário informações do pokemon selecionado por ele.
 - [x]  **Evoluções do Pokémon:** Mostrar ao usuários as evoluções do pokemon, através da API [PokemonGO-Pokedex](https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json).
 - [ ]  **Buscar Pokémons:** Buscar pokémons através do método filter() do JavaScript. (Funcionando parcialmente)
+- [x]  **Carregando:** Criar uma tela de loading enquanto o aplicativo busca as informações na API, utilizando a lib [React-Native-Animatable](https://github.com/oblador/react-native-animatable) e o componente ActivityIndicator do React-Native.
 ## 📚 Conceitos Abordados
 
 - React Hooks (useEffect, useState).
@@ -27,8 +28,7 @@ Desenvolver um aplicativo que faça uma listagem de pokémons, obtendo informaç
 - Métodos de arrays JavaScript (.map(), .filter()).
 - Conceitos de busca binária.
 - Navegação entre páginas com react-navigation.
-
-
+- Animação através da lib [React-Native-Animatable](https://github.com/oblador/react-native-animatable).
 
 ## 🚀 Tecnologias
 
@@ -37,4 +37,5 @@ Desenvolver um aplicativo que faça uma listagem de pokémons, obtendo informaç
 -  [Axios](https://axios-http.com/ptbr/docs/intro)
 -  [React-Native-Vector-Icons](https://github.com/oblador/react-native-vector-icons)
 -  [React-Navigation](https://reactnavigation.org/)
+-  [React-Native-Animatable](https://github.com/oblador/react-native-animatable)
 -  [JavaScript](https://www.javascript.com/)
